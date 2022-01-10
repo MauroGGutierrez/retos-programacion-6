@@ -113,11 +113,13 @@ function pasarUsuarioAPremium(usuarios) {
   //   usuarios[i].esPremium = true;
   // }
   // return usuarios;
-  let i = 0;
-  while (i < usuarios.length) {
-    usuarios[i].esPremium = true;
-    i++;
-  }
+  // let i = 0;
+  // while (i < usuarios.length) {
+  //   usuarios[i].esPremium = true;
+  //   i++;
+  // }
+  // return usuarios;
+  usuarios.forEach((usuario) => (usuario.esPremium = true));
   return usuarios;
 }
 
